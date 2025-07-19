@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buy Synapse Plus</title>
+  <link rel="icon" href="https://github.com/SpartanXRobloxScripts/Website/raw/refs/heads/main/assets/CorgisideLogoIcon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      overflow-x: hidden;
+    }
+
+    .background-circles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .circle {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.1;
+      animation-name: moveDiagonal;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes moveDiagonal {
+      0% { transform: translate(0, 0); opacity: 0.1; }
+      100% { transform: translate(100vw, 100vh); opacity: 0; }
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background-color: #1e1e1e;
+      padding: 10px 20px;
+      border-radius: 12px;
+      max-width: 2000px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 0 20px rgba(255, 170, 0, 0.2);
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+      border-radius: 10px;
+    }
+
+    .site-title {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.6em;
+      user-select: none;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-shadow: 0 0 15px rgba(137, 87, 8, 0.7), 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+
+    .paypal-section {
+      margin-top: 40px;
+    }
+
+    .paypal-button {
+      margin-top: 20px;
+    }
+
+    .note {
+      margin-top: 60px;
+      font-size: 1em;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="background-circles"></div>
+
+<header class="topbar">
+  <img src="https://github.com/SpartanXRobloxScripts/Website/blob/main/assets/LongLogo2.png?raw=true" alt="Logo" class="logo" />
+  <span class="site-title">Team CorgiSide</span>
+</header>
+
+<h1>Buy Synapse Plus</h1>
+
+<img src="https://github.com/SpartanXRobloxScripts/Website/blob/main/assets/Synapse%20Plus.png?raw=true" alt="Synapse Plus" style="max-width: 500px; width: 100%; height: auto; margin-bottom: 30px;">
+
+<div class="paypal-section">
+  <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1RmOdhCEHXc7ZU2Fwp3kVZ23"
+  publishable-key="pk_live_kTRZ69tUJ9DPpA2vB4Ll5QqQ"
+>
+</stripe-buy-button>
+</div>
+
+<p class="note">⚠️ This is a one-time purchase. Do not share your key.</p>
+
+<script>
+  const container = document.querySelector('.background-circles');
+
+  for (let i = 0; i < 125; i++) {
+    const circle = document.createElement('div');
+    circle.className = 'circle';
+
+    const top = Math.random() * 100;
+    const left = Math.random() * 100;
+    const size = 10 + Math.random() * 15;
+    const delay = -Math.random() * 20;
+    const duration = 10 + Math.random() * 10;
+
+    circle.style.top = `${top}%`;
+    circle.style.left = `${left}%`;
+    circle.style.width = `${size}px`;
+    circle.style.height = `${size}px`;
+    circle.style.animationDelay = `${delay}s`;
+    circle.style.animationDuration = `${duration}s`;
+
+    container.appendChild(circle);
+  }
+</script>
+
+</body>
+</html>
