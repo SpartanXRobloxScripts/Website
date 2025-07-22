@@ -19,8 +19,8 @@
             border-radius: 10px; /* smooth rounded edges */
             outline: none;
             transition: border-color 0.3s ease;
-            color: #424242;
-            background-color: rgb(200,200,200);
+            color: #5a5a5a;
+            background-color: rgb(255,255,255);
             text-align: center;          
         }
         #key:focus {
@@ -52,10 +52,10 @@
             try {
                 const response = await fetch('https://noah.customcloudapp.net/api.php?f=returnKey');
                 const data = await response.json();
-                if (data.key) {
+                if (data.key && data.checkPoint1 && data.checkPoint2) {
                     document.getElementById('key').value = data.key;
                 } else {
-                    document.getElementById('key').value = 'No key found.';
+                    document.getElementById('key').value = 'Silly little bypasser.';
                 }
             } catch (error) {
                 document.getElementById('key').value = 'Error fetching key.';
@@ -67,3 +67,4 @@
     </script>
 </body>
 </html>
+
