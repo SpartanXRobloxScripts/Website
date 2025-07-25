@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team CorgiSide</title>
+  <link rel="icon" href="https://github.com/SpartanXRobloxScripts/Website/raw/refs/heads/main/assets/CorgisideLogoIcon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a1a1a; /* dark gray background */
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      overflow-x: hidden;
+    }
+
+
+    .background-circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation-name: moveDiagonal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveDiagonal {
+  0% { transform: translate(0, 0); opacity: 0.1; }
+  100% { transform: translate(100vw, 100vh); opacity: 0; }
+}
+
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background-color: #1e1e1e;
+      padding: 10px 20px;
+      border-radius: 12px;
+      max-width: 2000px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 0 20px rgba(255, 170, 0, 0.2);
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+      border-radius: 10px;
+    }
+
+    .site-title {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.6em;
+      user-select: none;
+      margin: auto;
+    }
+
+	h2 {
+      font-size: 4em;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px rgba(137, 87, 8, 0.7), 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px rgba(137, 87, 8, 0.7), 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+	  justify-items: center;
+	  width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 170, 0, 0.15);
+      margin: 5px auto;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 300px;
+      position: relative;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #E1A241;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 14px;
+      margin: 10px auto;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 0 25px rgba(244,155,21, 0.3);
+    }
+	
+	.button-row {
+	display: flex;
+	gap: 1px;
+	justify-content: center;
+	}
+	
+	.joindisc-btn {
+      display: inline-block;
+      background-color: #5D90E4;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 20px;
+      margin: 5px 5px;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 0 25px rgba(5,138,255, 0.3);
+    }
+	
+	.joinzynix-btn {
+      display: inline-block;
+      background-color: #C50000;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 20px;
+      margin: 5px 5px;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 0 25px rgba(5,138,255, 0.3);
+    }
+
+    .download-btn:hover {
+      background-color: #F5A937;
+      transform: scale(1.05);
+    }
+	
+	.joindisc-btn:hover {
+      background-color: #69A1FF;
+      transform: scale(1.05);
+    }
+	
+	.joinzynix-btn:hover {
+	background-color: #FF0B0B;
+	transform: scale(1.05);
+	}
+
+    .note {
+      margin-top: 60px;
+      font-size: 1em;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-circles"></div>
+
+  <header class="topbar">
+    <img src="https://github.com/SpartanXRobloxScripts/Website/blob/main/assets/LongLogo2.png?raw=true" alt="Logo" class="logo" />
+    <span class="site-title">Team CorgiSide</span>
+  </header>
+
+  <h2>Join Our Discord</h2>
+
+
+
+<div class="button-row">
+<a class="joindisc-btn" href="https://discord.gg/SBr3SXFpQA" target="_blank">Join CorgiSide Discord</a>
+
+<a class="joinzynix-btn" href="https://discord.gg/sdQFeDEGpd " target="_blank">Join Zynix Discord</a>
+</div>
+
+
+  <h1>Available Exploits</h1>
+
+  <div class="grid">
+  <div class="card">
+    <div class="card-image">
+      <img src="https://github.com/SpartanXRobloxScripts/Website/blob/main/assets/Zynix.png?raw=true" alt="Zynix" />
+      <div class="card-title">Zynix</div>
+    </div>
+    <a class="download-btn" href="https://github.com/SpartanXRobloxScripts/Zynix-External/raw/refs/heads/main/Zynix%20V1.0.1.zip" download>Download</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://github.com/SpartanXRobloxScripts/Website/blob/main/assets/LuaSideLogo.png?raw=true" alt="LuaSide" />
+      <div class="card-title">LuaSide Code Editor</div>
+    </div>
+    <a class="download-btn" href="https://github.com/SpartanXRobloxScripts/CorgiSide-Files/raw/refs/heads/main/LuaSide%20Code%20Editor.zip" download>Download</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/SpartanXRobloxScripts/Website/refs/heads/main/assets/CorgiSideExploitsLogoMain.png" alt="CorgiSide DLL" />
+      <div class="card-title">CorgiSide DLL</div>
+    </div>
+    <a class="download-btn" href="https://github.com/SpartanXRobloxScripts/Website/raw/refs/heads/main/CorgiSide.dll" download>Download</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/SpartanXRobloxScripts/Website/refs/heads/main/assets/Synapse%20Plus%20Logo2.png" alt="Synapse Plus" />
+      <div class="card-title">Synapse Plus Launcher (NEW VERSION)!</div>
+    </div>
+    <a class="download-btn" href="https://github.com/SpartanXRobloxScripts/Synapse-Plus-Version/raw/refs/heads/main/Synapse%20Plus%20V1.16.4%20Launcher.zip" download>Download</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/SpartanXRobloxScripts/Website/refs/heads/main/assets/Synapse%20Plus%20Logo2.png" alt="Synapse Plus Serial Key" />
+      <div class="card-title">Synapse Plus Serial Key</div>
+    </div>
+    <a class="download-btn" href="https://corgiside.vercel.app/BuySynapse.html">Purchase</a>
+  </div>
+</div>
+
+
+	<h2 style="color: #FFFFFF; margin-top: 80px; margin-bottom: 40px;">Why Choose Us:</h2>
+<div class="grid">
+  <div class="card">
+    <div class="card-image" style="height: 150px; background: #191919; display: flex; align-items: center; justify-content: center; font-size: 1em; font-weight: bold; color: #FFFFFF;">
+      Swift Execution
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image" style="height: 150px; background: #191919; display: flex; align-items: center; justify-content: center; font-size: 1em; font-weight: bold; color: #FFFFFF;">
+      Guaranteed Exploit Experience
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image" style="height: 150px; background: #191919; display: flex; align-items: center; justify-content: center; font-size: 1em; font-weight: bold; color: #FFFFFF;">
+      Clean UI
+    </div>
+  </div>
+</div>
+
+  <p class="note">⚠️ Use at your own risk. For educational purposes only.</p>
+
+<script>
+  const container = document.querySelector('.background-circles');
+
+  for (let i = 0; i < 125; i++) {
+    const circle = document.createElement('div');
+    circle.className = 'circle';
+
+    // Random starting position (within the viewport)
+    const top = Math.random() * 100;
+    const left = Math.random() * 100;
+
+    // Random size between 10px–25px
+    const size = 10 + Math.random() * 15;
+
+    // Random animation delay & duration
+    const delay = -Math.random() * 20; // negative to stagger the start
+    const duration = 10 + Math.random() * 10;
+
+    // Apply inline style
+    circle.style.top = `${top}%`;
+    circle.style.left = `${left}%`;
+    circle.style.width = `${size}px`;
+    circle.style.height = `${size}px`;
+    circle.style.animationDelay = `${delay}s`;
+    circle.style.animationDuration = `${duration}s`;
+
+    container.appendChild(circle);
+  }
+</script>
+
+</body>
+</html>
