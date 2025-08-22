@@ -1,0 +1,90 @@
+[2025-08-10 21:05:29.305] [Xeno] [trace] Xeno is only maintained by Rizve. If you find any bugs, have any question, or just want to chat email me rizve@xeno.onl or DM me on Discord: .rizve
+[2025-08-10 21:05:29.306] [Xeno] [info] Version: Xeno - v1.2.45
+[2025-08-10 21:05:29.306] [Xeno] [info] Logs stored in C:\Users\noahh\source\repos\Synapse +\Synapse +\bin\Debug\logs\2025-08-10_21-05-29.log
+[2025-08-10 21:05:29.306] [Xeno] [debug] Client Checker thread: 0xa1305fed50
+[2025-08-10 21:05:29.306] [Xeno] [debug] Xeno Caching thread: 0xa1305fed40
+[2025-08-10 21:05:29.306] [Xeno] [debug] WebSockets Cleaner thread: 0xa1305fed30
+[2025-08-10 21:05:29.306] [Cache] [critical] Xeno directory missing: "C:\Users\noahh\AppData\Local\Xeno"
+[2025-08-10 21:05:29.308] [Xeno] [debug] Xeno Server thread: 0xa1305fed20
+[2025-08-10 21:05:29.308] [Server] [critical] Xeno directory missing: "C:\Users\noahh\AppData\Local\Xeno"
+[2025-08-10 21:05:29.317] [Xeno] [info] Creating new RBXClient: 15392
+[2025-08-10 21:05:29.317] [RBXClient] [info] [15392]: Initializing...
+[2025-08-10 21:05:29.317] [RBXClient] [info] [15392]: Version: version-b8550645b8834e8a
+[2025-08-10 21:05:29.318] [Xeno] [debug] Created RBXClient instance @0x27ccbad58a0
+[2025-08-10 21:05:29.318] [Xeno] [info] Successfully created RBXClient: 15392
+[2025-08-10 21:05:29.318] [RBXClient] [debug] [15392]: Getting RenderView...
+[2025-08-10 21:05:29.344] [RBXClient] [debug] [15392]: String: 0x2eb0b91f950
+[2025-08-10 21:05:29.344] [RBXClient] [debug] [15392]: Renderview: 0x2eb0b9ed000
+[2025-08-10 21:05:29.344] [RBXClient] [debug] [15392]: DataModel: 0x2eb00973e38
+[2025-08-10 21:05:29.344] [RBXClient] [debug] [15392]: LocalPlayer: 0x2eb148d9a80
+[2025-08-10 21:05:29.344] [RBXClient] [debug] [15392]: LocalPlayer Name: 'SynapsePlus_rblx'
+[2025-08-10 21:05:29.677] [RBXClient] [info] [15392]: Bytecode has been successfully set in menu.
+[2025-08-10 21:05:29.932] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:31.102] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:31.441] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:32.115] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:32.952] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:33.126] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:34.137] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:34.468] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:35.143] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:35.976] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:36.151] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:37.163] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:37.479] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:38.175] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:38.981] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:39.190] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:40.194] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:40.496] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:41.203] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:42.010] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:42.214] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:43.221] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:43.517] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:44.239] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:45.027] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:45.248] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:46.260] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:46.545] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:47.265] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:48.054] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:48.272] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:49.281] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:49.565] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:50.290] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:51.076] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:51.296] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:52.312] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:52.579] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:53.314] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:54.085] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:54.322] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:55.323] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:55.588] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:56.327] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:57.095] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:57.343] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:58.347] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:58.609] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:05:59.359] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:00.127] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:00.360] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:01.363] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:01.642] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:02.369] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:03.153] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:03.369] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:04.372] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:04.663] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:05.381] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:06.179] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:06.394] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:07.406] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:07.686] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:08.424] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:09.189] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:09.433] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:10.448] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:10.709] [Execution] [error] [15392]: Could not find a CoreModule
+[2025-08-10 21:06:11.462] [Execution] [error] [15392]: Could not find a CoreModule
