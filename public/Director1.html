@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Redirecting...</title>
+    <title>Checkpoint 1 | Redirecting...</title>
     <style>
         body {
             text-align: center;
@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>Checkpoint 1 | You are being redirected...</h1>
-    <p>If not redirected automatically, <a id="redirectLink" href="https://link-target.net/1373596/ZTvp2n2AlFws">click here</a>.</p>
+    <p>If not redirected automatically, <a id="redirectLink" href="Checkpoint2.html">click here</a>.</p>
 
     <script>
         async function fetchKeySetCheckpointAndRedirect() {
@@ -27,22 +27,25 @@
                 if (data.success && data.newFreeKey) {
                     const newKey = data.newFreeKey;
 
-                    // Call setCheckpoint2 with the new key
+                    // Save the key in localStorage so Checkpoint2 can use it
+                    localStorage.setItem("freeKey", newKey);
+
+                    // Set checkpoint1 = 1 for this key
                     const checkpointUrl = `https://noah.customcloudapp.net/api.php?f=setCheckpoint1&freeKey=${encodeURIComponent(newKey)}&checkPointValue=1`;
                     await fetch(checkpointUrl);
 
-                    // Redirect after 3 seconds
+                    // Redirect to Checkpoint2 after 3 seconds
                     setTimeout(() => {
                         window.location.href = document.getElementById('redirectLink').href;
                     }, 3000);
                 } else {
-                    // If key generation failed, just redirect anyway
+                    // If key generation failed, still redirect
                     setTimeout(() => {
                         window.location.href = document.getElementById('redirectLink').href;
                     }, 3000);
                 }
             } catch (error) {
-                // On error, redirect anyway
+                // On error, still redirect
                 setTimeout(() => {
                     window.location.href = document.getElementById('redirectLink').href;
                 }, 3000);
