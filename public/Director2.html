@@ -26,7 +26,7 @@
 
             if (data.success && data.key) {
                 const key = data.key;
-                const checkpoint1 = data.checkPoint1 ? 1 : 0;
+                const checkpoint1 = data.checkpoint1 ? 1 : 0;
 
                 if (checkpoint1 === 1) {
                     const setCheckpointUrl = `https://noah.customcloudapp.net/api.php?f=setCheckpoint2&freeKey=${encodeURIComponent(key)}&checkPointValue=1`;
@@ -48,3 +48,4 @@
 </script>
 </body>
 </html>
+
