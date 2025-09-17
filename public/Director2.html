@@ -30,7 +30,7 @@
 
                     if (checkpoint1 == 1 || checkpoint1 === true) {
                         // If checkpoint1 is true, set checkpoint2 = 1
-                        const setCheckpointUrl = `https://noah.customcloudapp.net/api.php?f=SetCheckpoint2&freeKey=${encodeURIComponent(key)}&checkPointValue=1`;
+                        const setCheckpointUrl = `https://noah.customcloudapp.net/api.php?f=setCheckpoint2&freeKey=${encodeURIComponent(key)}&checkPointValue=1`;
                         await fetch(setCheckpointUrl);
                     }
                 }
@@ -51,3 +51,4 @@
     </script>
 </body>
 </html>
+
